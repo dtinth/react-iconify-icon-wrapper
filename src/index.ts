@@ -8,7 +8,7 @@ import React from 'react'
  * Properties for React component
  */
 export interface Icon extends React.HTMLProps<HTMLElement> {
-  icon: IconifyIcon
+  icon: string | IconifyIcon
   mode?: 'style' | 'mask' | 'svg' | 'bg'
   inline?: boolean
   width?: string | number
@@ -21,6 +21,7 @@ export interface Icon extends React.HTMLProps<HTMLElement> {
  * @see https://docs.iconify.design/types/iconify-json.html
  */
 export interface IconifyIcon {
+  body: string
   left?: number
   top?: number
   width?: number
