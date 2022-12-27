@@ -13,9 +13,7 @@ export interface Icon extends React_2.HTMLProps<HTMLElement> {
     // (undocumented)
     height?: string | number;
     // (undocumented)
-    icon: string | {
-        body: string;
-    };
+    icon: IconifyIcon;
     // (undocumented)
     inline?: boolean;
     // (undocumented)
@@ -28,6 +26,24 @@ export interface Icon extends React_2.HTMLProps<HTMLElement> {
 
 // @public
 export const Icon: React_2.FC<Icon>;
+
+// @public (undocumented)
+export interface IconifyIcon {
+    // (undocumented)
+    height?: number;
+    // (undocumented)
+    hFlip?: boolean;
+    // (undocumented)
+    left?: number;
+    // (undocumented)
+    rotate?: number;
+    // (undocumented)
+    top?: number;
+    // (undocumented)
+    vFlip?: boolean;
+    // (undocumented)
+    width?: number;
+}
 
 // (No @packageDocumentation comment for this package)
 
