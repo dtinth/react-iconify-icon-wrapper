@@ -20,7 +20,7 @@ export interface Icon extends React.HTMLProps<HTMLElement> {
 /**
  * React component
  */
-export const Icon = React.forwardRef(
+export const Icon: React.FC<Icon> = React.forwardRef(
   (props: Icon, ref: React.ForwardedRef<HTMLElement>) => {
     const newProps: Record<string, unknown> = {
       ...props,
@@ -44,6 +44,4 @@ export const Icon = React.forwardRef(
 
     return React.createElement('iconify-icon', newProps)
   },
-)
-
-export type { IconifyIcon } from 'iconify-icon'
+) as any
