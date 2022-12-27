@@ -13,7 +13,7 @@ export interface Icon extends React_2.HTMLProps<HTMLElement> {
     // (undocumented)
     height?: string | number;
     // (undocumented)
-    icon: IconifyIcon;
+    icon: string | IconifyIcon;
     // (undocumented)
     inline?: boolean;
     // (undocumented)
@@ -29,6 +29,8 @@ export const Icon: React_2.FC<Icon>;
 
 // @public (undocumented)
 export interface IconifyIcon {
+    // (undocumented)
+    body: string;
     // (undocumented)
     height?: number;
     // (undocumented)
